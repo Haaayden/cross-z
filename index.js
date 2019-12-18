@@ -1,8 +1,7 @@
-let pkg = require('./src/easy-1')
+let pkg = require('./src/easy-2')
 
-// let testCase = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
-let testCase = [0]
+let testCase = [7, 1, 5, 3, 6, 4]
 const res = pkg(testCase)
 
-console.log('res', res)
 console.log('testCase', testCase)
+console.log('res', res)
