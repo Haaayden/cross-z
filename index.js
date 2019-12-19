@@ -1,6 +1,6 @@
-let solution = require('./solution/easy-7')
+let solution = require('./solution/easy-8')
 
-let testCase = [4, 9, 9]
+let testCase = [0, 1, 0, 1, 0, 3, 12, -1]
 // let testCase2 = [9, 4, 9, 8, 4]
 const res = solution(testCase)
 
