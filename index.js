@@ -1,8 +1,8 @@
-let solution = require('./solution/easy-8')
+let solution = require('./solution/easy-9')
 
-let testCase = [0, 1, 0, 1, 0, 3, 12, -1]
+let testCase = [3, 3]
 // let testCase2 = [9, 4, 9, 8, 4]
-const res = solution(testCase)
+const res = solution(testCase, 6)
 
 console.log('testCase', testCase)
-// console.log('res', res)
+console.log('res', res)
