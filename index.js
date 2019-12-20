@@ -1,6 +1,6 @@
-let solution = require('./solution/easy-16')
+let solution = require('./solution/easy-17')
 
-let testCase = "A man, a plan, a canal: Panama"
+let testCase = "-5-"
 // let testCase2 = "nagaram"
 const res = solution(testCase)
 
