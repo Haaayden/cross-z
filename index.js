@@ -1,8 +1,8 @@
-let solution = require('./solution/easy-17')
+let solution = require('./solution/easy-18')
 
-let testCase = "-5-"
-// let testCase2 = "nagaram"
-const res = solution(testCase)
+let testCase = "mississippi"
+let testCase2 = "issip"
+const res = solution(testCase, testCase2)
 
 console.log('testCase', testCase)
 console.log('res', res)
