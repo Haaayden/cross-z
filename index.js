@@ -1,8 +1,8 @@
-let solution = require('./solution/easy-20')
+let solution = require('./solution/easy-21')
 
-let testCase = ["flower","flow","flight"]
-// let testCase2 = "issip"
-const res = solution(testCase)
+let testCase = [4, 5, 1, 9]
+let testCase2 = 5
+const res = solution(testCase, testCase2)
 
 console.log('testCase', testCase)
 console.log('res', res)
