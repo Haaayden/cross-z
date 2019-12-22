@@ -1,8 +1,9 @@
-let solution = require('./solution/easy-21')
+const { singleLinkedList } = require('./util/ListNode')
+let solution = require('./solution/easy-22')
 
-let testCase = [4, 5, 1, 9]
-let testCase2 = 5
+let testCase = singleLinkedList([1])
+let testCase2 = 1
 const res = solution(testCase, testCase2)
 
 console.log('testCase', testCase)
-console.log('res', res)
+console.log('res', JSON.stringify(res))
