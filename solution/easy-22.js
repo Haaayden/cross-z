@@ -1,4 +1,4 @@
-// 删除链表的倒数第 N 个节点
+// 删除链表的倒数第 N 个节点 [19]
 // https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/6/linked-list/42/
 
 /**
@@ -32,6 +32,7 @@
 //   return head
 // }
 
+// 一次遍历
 var removeNthFromEnd = function(head, n) {
   let tmp = head
 
