@@ -1,7 +1,7 @@
 const { singleLinkedList } = require('./util/ListNode')
 const { getBinaryTreeFromArray } = require('./util/TreeNode')
 
-let solution = require('./sort/bubble')
+let solution = require('./sort/merge')
 
 // let testCase = getBinaryTreeFromArray([3,9,20,null,null,15,7])
 let testCase = [2, 1, 7, 9, 5, 8]
