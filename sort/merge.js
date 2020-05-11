@@ -10,6 +10,7 @@ function mergeSort(list) {
   const left = list.slice(0, mid)
   const right = list.slice(mid)
 
+  // 合并两个有序数组
   return merge(mergeSort(left), mergeSort(right))
 }
 
