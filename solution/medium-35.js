@@ -9,14 +9,16 @@ var preorderTraversal = function(root) {
   let stack = [ root ]
   let res = []
 
-  while (stack.length >= 1) {
-    const top = stack.pop()
-    res.push(top.val)
+  let curNode = root
+  while (curNode !== null || stack.length >= 1) {
+    while (curNode !== null) {
+      stack.push(curNode)
+      curNode = curNode.left
+    }
+    curNode = stack.pop()
+    res.push(curNode)
+    curNode = curNode.right
 
-    const right = top.right
-    if (right !== null) stack.push(right)
-    const left = top.left
-    if (left !== null) stack.push(left)
   }
 
   return res

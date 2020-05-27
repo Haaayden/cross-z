@@ -1,7 +1,7 @@
 const { singleLinkedList } = require('./util/ListNode')
 const { getBinaryTreeFromArray } = require('./util/TreeNode')
 
-let solution = require('./solution/medium-35')
+let solution = require('./solution/medium-36')
 
 // let testCase = getBinaryTreeFromArray([3,9,20,null,null,15,7])
 let testCase = getBinaryTreeFromArray([1,2,3,4,5,6,7])
