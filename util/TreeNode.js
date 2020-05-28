@@ -16,15 +16,15 @@ function getBinaryTreeFromArray(list) {
 
     let left = list[i]
     top.left = left === null ? null : new TreeNode(left)
+    if (top.left !== null) queue.push(top.left)
     i += 1
 
+
+    if (i >= list.length) continue
     let right = list[i]
     top.right = right === null ? null : new TreeNode(right)
-    i += 1
-
-    if (top.left !== null) queue.push(top.left)
     if (top.right !== null) queue.push(top.right)
-
+    i += 1
   }
   return root
 }

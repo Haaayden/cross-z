@@ -1,10 +1,11 @@
 const { singleLinkedList } = require('./util/ListNode')
 const { getBinaryTreeFromArray } = require('./util/TreeNode')
 
-let solution = require('./solution/medium-36')
+let solution = require('./solution/medium-38')
 
-// let testCase = getBinaryTreeFromArray([3,9,20,null,null,15,7])
-let testCase = getBinaryTreeFromArray([1,2,3,4,5,6,7])
+// let testCase = getBinaryTreeFromArray([1, 2, 3, 4, 5, 6, 7])
+let testCase = getBinaryTreeFromArray([1,2,null,3,null,4,null,5])
+// let testCase = getBinaryTreeFromArray([3,9,20,15,7])
 // 5,5,8,4,6,
 // let testCase2 = singleLinkedList([1, 3, 4])
 const res = solution(testCase)
