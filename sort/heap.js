@@ -11,7 +11,7 @@ function heapSort(list) {
   while (heapSize > 1) {
     // 交换顶部与最后一个元素
     swap(list, 0, heapSize - 1)
-    // 每次堆的大小减一，最后一位报错堆顶也就是最大值
+    // 每次堆的大小减一，数组最后一位保存堆顶也就是最大值
     // 每次将堆顶元素替换到数组最后一位后，重新堆化堆顶元素
     heapSize--
     heapify1(list, heapSize, 0)
