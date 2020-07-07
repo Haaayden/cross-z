@@ -1,27 +1,47 @@
-function isBalanced(root) {
-  if (root === null) return true
-  return Math.abs(getHeight(root.left) - getHeight(root.right)) <= 1 && isBalanced(root.left) && isBalanced(root.right)
+// 打乱数组，洗牌算法
+// https://leetcode-cn.com/problems/shuffle-an-array/
+
+/**
+ * @param {number[]} nums
+ */
+var Solution = function(nums) {
+  this.nums = nums
 };
 
 /**
- * 获取指定节点的高度
+ * Resets the array to its original configuration and return it.
+ * @return {number[]}
  */
-function getHeight(node) {
-  if (node === null) return -1
-  let queue = [node]
-  let level = -1
-  while (queue.length > 0) {
-    level++
-    let count = queue.length
-    while(count > 0) {
-      const node = queue.shift()
-      if (node && node.left) queue.push(node.left)
-      if (node && node.right) queue.push(node.right)
-      count--
-    }
-  }
+Solution.prototype.reset = function() {
+  return this.nums
+};
 
-  return level
+/**
+ * Returns a random shuffling of the array.
+ * @return {number[]}
+ */
+Solution.prototype.shuffle = function() {
+  // 浅拷贝
+  const nums = this.nums.slice()
+
+  for (let i = nums.length - 1; i >= 0; i--) {
+    const randIndex = Math.floor(Math.random()*(i + 1))
+    swap(nums, i, randIndex)
+  }
+  return nums
+};
+
+function swap(list, i, j) {
+  const tmp = list[i]
+  list[i] = list[j]
+  list[j] = tmp
 }
 
-module.exports = isBalanced
+/**
+ * Your Solution object will be instantiated and called as such:
+ * var obj = new Solution(nums)
+ * var param_1 = obj.reset()
+ * var param_2 = obj.shuffle()
+ */
+
+module.exports = Solution
